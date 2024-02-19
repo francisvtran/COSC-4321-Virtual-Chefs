@@ -6,6 +6,16 @@ TagManager:
   tags:
   - CheeseBlock
   - Knife
+  - LettuceBlock
+  - TomatoBlock
+  - TopBun
+  - BottomBun
+  - UncookedMeat
+  - CookedMeat
+  - BurntMeat
+  - CheeseSlice
+  - TomatoSlice
+  - LettuceSlice
   layers:
   - Default
   - TransparentFX

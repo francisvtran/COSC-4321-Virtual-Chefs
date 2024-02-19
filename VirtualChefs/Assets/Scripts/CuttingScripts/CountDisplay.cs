@@ -15,14 +15,6 @@ public class CountDisplay : MonoBehaviour
         cutsRemaining.text = message;
     }
 
-    public void ReplaceMessage(string message)
-    {
-        // False to true might fix changing the message?
-        holder.SetActive(false);
-        holder.SetActive(true);
-        cutsRemaining.text = message;
-    }
-
     public void Hide()
     {
         holder.SetActive(false);

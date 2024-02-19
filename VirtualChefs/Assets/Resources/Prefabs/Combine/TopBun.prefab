@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6510016152872282860
+--- !u!1 &522176099696603127
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,66 +8,66 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2936148739152555275}
-  - component: {fileID: 6299414401697432206}
-  - component: {fileID: 1736052967739771525}
-  - component: {fileID: 5953536608825818479}
-  - component: {fileID: 251448584468824495}
-  - component: {fileID: 8002333622459595587}
-  - component: {fileID: 7337478235829049336}
-  - component: {fileID: 7985259858367233394}
+  - component: {fileID: 7662248368466116235}
+  - component: {fileID: 711322472107082782}
+  - component: {fileID: 4796893382826154658}
+  - component: {fileID: 3200254174171096400}
+  - component: {fileID: 8636089981726935302}
+  - component: {fileID: 8726916404924514605}
+  - component: {fileID: 1701405869273455763}
+  - component: {fileID: 3470604421928413204}
   m_Layer: 0
-  m_Name: GrabbableCookedMeat
-  m_TagString: Untagged
+  m_Name: TopBun
+  m_TagString: TopBun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2936148739152555275
+--- !u!4 &7662248368466116235
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6510016152872282860}
+  m_GameObject: {fileID: 522176099696603127}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.715, y: 0.329, z: 0}
+  m_LocalPosition: {x: 0.4, y: 0.8, z: 0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6299414401697432206
+--- !u!114 &711322472107082782
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6510016152872282860}
+  m_GameObject: {fileID: 522176099696603127}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b023183069df224080314a560e6e1ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5c5184f2-c2f5-4063-b14b-3b1264fb3c1a
-  instanceId: 05aec1ee-3ef0-4159-bfa7-6a9a3932e4a5
+  instanceId: 56fcdea3-ce32-49fa-8111-0e028e6a2f26
   version: 1
---- !u!33 &1736052967739771525
+--- !u!33 &4796893382826154658
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6510016152872282860}
-  m_Mesh: {fileID: 2977383563096778778, guid: 598a91cf1806eae49abf8273f6ad8ffa, type: 3}
---- !u!23 &5953536608825818479
+  m_GameObject: {fileID: 522176099696603127}
+  m_Mesh: {fileID: 8182009796194131822, guid: 240cb0343f51a264eaa7795cefe2dd94, type: 3}
+--- !u!23 &3200254174171096400
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6510016152872282860}
+  m_GameObject: {fileID: 522176099696603127}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -81,7 +81,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -4093226344146330725, guid: 598a91cf1806eae49abf8273f6ad8ffa, type: 3}
+  - {fileID: 2238796764414207470, guid: 240cb0343f51a264eaa7795cefe2dd94, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103,13 +103,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &251448584468824495
+--- !u!65 &8636089981726935302
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6510016152872282860}
+  m_GameObject: {fileID: 522176099696603127}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -122,15 +122,15 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.23, y: 0.03, z: 0.22}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &8002333622459595587
+  m_Size: {x: 0.22, y: 0.1, z: 0.22}
+  m_Center: {x: 0, y: 0.02, z: 0}
+--- !u!54 &8726916404924514605
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6510016152872282860}
+  m_GameObject: {fileID: 522176099696603127}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -151,13 +151,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7337478235829049336
+--- !u!114 &1701405869273455763
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6510016152872282860}
+  m_GameObject: {fileID: 522176099696603127}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
@@ -170,13 +170,13 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
---- !u!114 &7985259858367233394
+--- !u!114 &3470604421928413204
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6510016152872282860}
+  m_GameObject: {fileID: 522176099696603127}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
@@ -186,8 +186,8 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 7337478235829049336}
-  _rigidbody: {fileID: 8002333622459595587}
+  _pointableElement: {fileID: 1701405869273455763}
+  _rigidbody: {fileID: 8726916404924514605}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:

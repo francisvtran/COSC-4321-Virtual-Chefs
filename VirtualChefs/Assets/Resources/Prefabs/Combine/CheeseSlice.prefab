@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5529951636044787423
+--- !u!1 &4155234935526280909
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,66 +8,66 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7505852450916973581}
-  - component: {fileID: 8055603218827016066}
-  - component: {fileID: 5482594144942841096}
-  - component: {fileID: 2128321032992728544}
-  - component: {fileID: 9177789915982201267}
-  - component: {fileID: 2455573807176907737}
-  - component: {fileID: 2243701784555287852}
-  - component: {fileID: 1686433388256464317}
+  - component: {fileID: 5340245842376717063}
+  - component: {fileID: 3152163703747428268}
+  - component: {fileID: 2549166762445847562}
+  - component: {fileID: 5354882882427803813}
+  - component: {fileID: 1441212042675251537}
+  - component: {fileID: 4708646750278826299}
+  - component: {fileID: 1047809736571258630}
+  - component: {fileID: 7356146767361721882}
   m_Layer: 0
-  m_Name: GrabbableTomato
+  m_Name: CheeseSlice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7505852450916973581
+--- !u!4 &5340245842376717063
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5529951636044787423}
+  m_GameObject: {fileID: 4155234935526280909}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.497, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.187, z: 0.498}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8055603218827016066
+--- !u!114 &3152163703747428268
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5529951636044787423}
+  m_GameObject: {fileID: 4155234935526280909}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b023183069df224080314a560e6e1ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5c5184f2-c2f5-4063-b14b-3b1264fb3c1a
-  instanceId: eac21f1d-851a-4dd6-b75c-9fe6b76501be
+  instanceId: e05159bb-1341-4494-9d4b-e0338cf017d0
   version: 1
---- !u!33 &5482594144942841096
+--- !u!33 &2549166762445847562
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5529951636044787423}
-  m_Mesh: {fileID: -1340541719380434750, guid: 1490c1a2a58371d4b9cc957fc7b17d59, type: 3}
---- !u!23 &2128321032992728544
+  m_GameObject: {fileID: 4155234935526280909}
+  m_Mesh: {fileID: -639049293539451386, guid: 87763d49f84b8484a937c64afab69a17, type: 3}
+--- !u!23 &5354882882427803813
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5529951636044787423}
+  m_GameObject: {fileID: 4155234935526280909}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -81,7 +81,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8876429951165359728, guid: 1490c1a2a58371d4b9cc957fc7b17d59, type: 3}
+  - {fileID: -7720851650173870308, guid: 87763d49f84b8484a937c64afab69a17, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103,13 +103,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &9177789915982201267
+--- !u!65 &1441212042675251537
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5529951636044787423}
+  m_GameObject: {fileID: 4155234935526280909}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -122,15 +122,15 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.13, y: 0.13, z: 0.13}
-  m_Center: {x: 0, y: 0.05, z: 0}
---- !u!54 &2455573807176907737
+  m_Size: {x: 0.19, y: 0.03, z: 0.11}
+  m_Center: {x: 0.01, y: 0, z: -0.005}
+--- !u!54 &4708646750278826299
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5529951636044787423}
+  m_GameObject: {fileID: 4155234935526280909}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -151,13 +151,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2243701784555287852
+--- !u!114 &1047809736571258630
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5529951636044787423}
+  m_GameObject: {fileID: 4155234935526280909}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
@@ -170,13 +170,13 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
---- !u!114 &1686433388256464317
+--- !u!114 &7356146767361721882
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5529951636044787423}
+  m_GameObject: {fileID: 4155234935526280909}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
@@ -186,8 +186,8 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 2243701784555287852}
-  _rigidbody: {fileID: 2455573807176907737}
+  _pointableElement: {fileID: 1047809736571258630}
+  _rigidbody: {fileID: 4708646750278826299}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
