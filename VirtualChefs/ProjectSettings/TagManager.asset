@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CheeseBlock
+  - Knife
+  - LettuceBlock
+  - TomatoBlock
+  - TopBun
+  - BottomBun
+  - UncookedMeat
+  - CookedMeat
+  - BurntMeat
+  - CheeseSlice
+  - TomatoSlice
+  - LettuceSlice
   layers:
   - Default
   - TransparentFX
