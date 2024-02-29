@@ -6,6 +6,7 @@ public class CountDisplay : MonoBehaviour
 {
     public GameObject holder;
     public TextMeshProUGUI cutsRemaining;
+    public string messageString;
     public void ShowMessage(string message)
     {
         if (!holder.activeSelf)
@@ -13,6 +14,7 @@ public class CountDisplay : MonoBehaviour
             holder.SetActive(true);
         }
         cutsRemaining.text = message;
+        messageString = message;
     }
 
     public void Hide()

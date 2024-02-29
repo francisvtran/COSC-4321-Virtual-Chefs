@@ -13772,6 +13772,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 522176099696603127, guid: cb60c73b7952e5a428a57861f2f93181,
+        type: 3}
+      propertyPath: m_Name
+      value: CookedMeat
+      objectReference: {fileID: 0}
     - target: {fileID: 711322472107082782, guid: cb60c73b7952e5a428a57861f2f93181,
         type: 3}
       propertyPath: instanceId
@@ -13826,11 +13831,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 522176099696603127, guid: cb60c73b7952e5a428a57861f2f93181,
-        type: 3}
-      propertyPath: m_Name
-      value: CookedMeat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13986,6 +13986,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 522176099696603127, guid: 22a9fc55953b2d14d8aa141cdb05c041,
+        type: 3}
+      propertyPath: m_Name
+      value: TopBun
+      objectReference: {fileID: 0}
     - target: {fileID: 711322472107082782, guid: 22a9fc55953b2d14d8aa141cdb05c041,
         type: 3}
       propertyPath: instanceId
@@ -14040,11 +14045,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 522176099696603127, guid: 22a9fc55953b2d14d8aa141cdb05c041,
-        type: 3}
-      propertyPath: m_Name
-      value: TopBun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

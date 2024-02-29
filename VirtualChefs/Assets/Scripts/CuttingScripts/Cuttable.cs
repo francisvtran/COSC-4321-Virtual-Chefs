@@ -81,7 +81,7 @@ public class Cuttable : MonoBehaviour
         Vector3 blockPosition = transform.position;
         Quaternion blockRotation = transform.rotation;
 
-        // Deactivates the original cheese object
+        // Deactivates the original object block
         gameObject.SetActive(false);
 
         // Places cut version of object on original position
