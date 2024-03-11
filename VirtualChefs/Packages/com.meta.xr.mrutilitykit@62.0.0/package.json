@@ -1,0 +1,59 @@
+{
+  "name": "com.meta.xr.mrutilitykit",
+  "displayName": "Meta MR Utility Kit",
+  "version": "62.0.0",
+  "description": "Helper tools & functions to simplify development with Scene API. Works on Mac & PC, without a device attached.",
+  "samples": [
+    {
+      "displayName": "Basic",
+      "description": "A basic scene showing the core functionality of MR Utility Kit",
+      "path": "Samples~/Basic"
+    },
+    {
+      "displayName": "Floor Zone",
+      "description": "A scene showing how to find a floor zone",
+      "path": "Samples~/FloorZone"
+    },
+    {
+      "displayName": "Multi Spawn",
+      "description": "A scene showing how to spawn objects in different locations within the room",
+      "path": "Samples~/MultiSpawn"
+    },
+    {
+      "displayName": "Nav Mesh",
+      "description": "A scene showing how to create a nav mesh for navigation",
+      "path": "Samples~/NavMesh"
+    },
+    {
+      "displayName": "Virtual Home",
+      "description": "A scene showing the prefab spawner functionality",
+      "path": "Samples~/VirtualHome"
+    },
+    {
+      "displayName": "Passthrough Relighting",
+      "description": "A scene showing the effect of virtual shadows and highlights on scene objects",
+      "path": "Samples~/PassthroughRelighting"
+    }
+  ],
+  "unity": "2021.3",
+  "unityRelease": "26f1",
+  "author": {
+    "name": "Meta Platforms, Inc.",
+    "url": "https://developer.oculus.com/"
+  },
+  "documentationUrl": "https://developer.oculus.com/documentation/unity/",
+  "changelogUrl": "https://developer.oculus.com/downloads/package/unity-integration/",
+  "licensesUrl": "https://developer.oculus.com/licenses/oculussdk",
+  "licenseMessage": "By adding or using this package you agree to the terms and conditions of the Meta Platforms Technologies SDK License Agreement: https://developer.oculus.com/licenses/oculussdk",
+  "keywords": [
+    "Meta"
+  ],
+  "dependencies": {
+    "com.unity.ai.navigation": "1.1.4",
+    "com.unity.nuget.newtonsoft-json": "3.0.2",
+    "com.meta.xr.sdk.core": "62.0.0",
+    "com.unity.textmeshpro": "3.0.6",
+    "com.meta.xr.sdk.interaction": "62.0.0",
+    "com.meta.xr.sdk.interaction.ovr": "62.0.0"
+  }
+}
