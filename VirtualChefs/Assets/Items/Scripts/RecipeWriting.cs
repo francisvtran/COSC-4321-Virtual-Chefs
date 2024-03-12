@@ -31,6 +31,7 @@ public class RecipeWriting : MonoBehaviour
         */
         //RandomRecipe.m_MyEvent.AddListener(WriteRecipe);
         RandomRecipe.recipeMade += WriteRecipe;
+        ReadFood.orderGiven += ClearWriting;
     }
 
     private void OnDisable()
@@ -42,6 +43,7 @@ public class RecipeWriting : MonoBehaviour
         */
         //RecipeManager.m_MyEvent.RemoveListener(WriteRecipe);
         RandomRecipe.recipeMade -= WriteRecipe;
+        ReadFood.orderGiven -= ClearWriting;
     }
     
     public void WriteRecipe(int n, string c, string t)
@@ -51,6 +53,15 @@ public class RecipeWriting : MonoBehaviour
         {
             text.text = "<size=12%><b>Table " + n + "</b>\n" + t;
             curOrder = c;
+        }
+    }
+
+    public void ClearWriting(int n, double s)
+    {
+        if (n == tableID)
+        {
+            text.text = "<size=20%>No Order";
+            curOrder = "";
         }
     }
 
