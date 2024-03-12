@@ -17,6 +17,8 @@ TagManager:
   - TomatoSlice
   - LettuceSlice
   - Stove
+  - Bin
+  - food
   layers:
   - Default
   - TransparentFX
