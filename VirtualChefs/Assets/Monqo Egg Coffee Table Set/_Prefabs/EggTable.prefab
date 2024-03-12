@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3861632147262986268}
   - component: {fileID: 529648521809694613}
   - component: {fileID: 3078836705735415862}
+  - component: {fileID: 9165181332306185353}
   m_Layer: 0
   m_Name: TableLegs
   m_TagString: Untagged
@@ -106,6 +107,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7567532504055388576, guid: 61111289179c01d4b8ecf2c9565c3ed2, type: 3}
+--- !u!65 &9165181332306185353
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468916711538107481}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.61389256, y: 0.44955483, z: 0.61389256}
+  m_Center: {x: 0, y: 0.22514467, z: 0}
 --- !u!1 &532876506795622314
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,9 +137,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4015755547284541891}
+  - component: {fileID: 6177370742552222876}
   m_Layer: 0
   m_Name: EggTable
-  m_TagString: Untagged
+  m_TagString: Spawnable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,6 +162,28 @@ Transform:
   - {fileID: 5860094782600836217}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &6177370742552222876
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532876506795622314}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &9182825474940715278
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +196,7 @@ GameObject:
   - component: {fileID: 3706804156574626013}
   - component: {fileID: 877691608155422136}
   - component: {fileID: 8843632337137884499}
+  - component: {fileID: 5814943162515539087}
   m_Layer: 0
   m_Name: TableTop
   m_TagString: Untagged
@@ -245,3 +291,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6857689473578963052, guid: 61111289179c01d4b8ecf2c9565c3ed2, type: 3}
+--- !u!65 &5814943162515539087
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9182825474940715278}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.76287985, y: 0.047848735, z: 0.76287985}
+  m_Center: {x: 0, y: -0.023885889, z: 0}
