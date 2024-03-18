@@ -16,6 +16,7 @@ TagManager:
   - CheeseSlice
   - TomatoSlice
   - LettuceSlice
+  - Plate
   layers:
   - Default
   - TransparentFX
