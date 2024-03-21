@@ -129,7 +129,7 @@ public class RandomRecipe : MonoBehaviour
                                     break;
                             }
                             //plated
-                            code = code + "0001";
+                            code = code + "9991";
                             recipeMade(tableNum, code, text);
                         }
                         break;
@@ -175,7 +175,7 @@ public class RandomRecipe : MonoBehaviour
                             }
                             //cheese plated
                             text = text + "Cheese\n";
-                            code = code + "1001";
+                            code = code + "1991";
                             recipeMade(tableNum, code, text);
                         }
                         break;
@@ -255,7 +255,7 @@ public class RandomRecipe : MonoBehaviour
                             text = "<size=10%>1 Salad:\nCut Tomato\nCut Lettuce\nMixed\n";
                             code = code + returnNum;
                             //Tomato lettuce plated
-                            code = code + "000111";
+                            code = code + "999111";
                             recipeMade(tableNum, code, text);
                         }
                         break;
@@ -369,7 +369,7 @@ public class RandomRecipe : MonoBehaviour
                                     break;
                             }
                             //plated
-                            code = code + "0001";
+                            code = code + "9991";
                             recipeMade(tableNum, code, text);
                         }
                         break;
@@ -415,7 +415,7 @@ public class RandomRecipe : MonoBehaviour
                             }
                             //cheese plated
                             text = text + "Cheese\n";
-                            code = code + "1001";
+                            code = code + "1991";
                             recipeMade(tableNum, code, text);
                         }
                         break;
@@ -495,7 +495,7 @@ public class RandomRecipe : MonoBehaviour
                             text = "<size=10%>1 Salad:\nCut Tomato\nCut Lettuce\nMixed\n";
                             code = code + returnNum;
                             //Tomato lettuce plated
-                            code = code + "000111";
+                            code = code + "999111";
                             recipeMade(tableNum, code, text);
                         }
                         break;

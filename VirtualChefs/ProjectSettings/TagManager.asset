@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Ticket
   - Food
+  - Plate
+  - BottomBun
+  - TopBun
+  - CheeseSlice
+  - LettuceSlice
+  - TomatoSlice
+  - CookedMeat
   layers:
   - Default
   - TransparentFX

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6483157148071203448}
   - component: {fileID: 8319314962882304123}
   - component: {fileID: 1062514279992905446}
-  - component: {fileID: 7110438412991027137}
+  - component: {fileID: 7470113845856359531}
   m_Layer: 0
   m_Name: TempFood
   m_TagString: Food
@@ -134,7 +134,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7110438412991027137
+--- !u!114 &7470113845856359531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4039918690530749934}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee77d004eb67e734c9deecebf8deb4d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 95e457106a5ee9447a8d3df71fe71127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FoodCode: 000101010
+  size: 0
