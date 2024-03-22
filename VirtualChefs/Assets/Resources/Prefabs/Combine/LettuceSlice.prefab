@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3390816880623809169}
   - component: {fileID: 5545933166214135836}
   - component: {fileID: 1971134700826195729}
+  - component: {fileID: 3761065337732258211}
   m_Layer: 0
   m_Name: LettuceSlice
   m_TagString: LettuceSlice
@@ -51,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5c5184f2-c2f5-4063-b14b-3b1264fb3c1a
-  instanceId: becc78a7-7a68-4b7e-b1e9-421593f87fa6
+  instanceId: aed633e4-3549-4d06-96b7-30f147d5432d
   version: 1
 --- !u!33 &5957577315141847939
 MeshFilter:
@@ -211,3 +212,15 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
+--- !u!114 &3761065337732258211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6279590247277179871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 807ac579987463a48a27c5eb4d22c717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

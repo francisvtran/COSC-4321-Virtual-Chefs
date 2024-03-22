@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4708646750278826299}
   - component: {fileID: 1047809736571258630}
   - component: {fileID: 7356146767361721882}
+  - component: {fileID: 6333301042172222673}
   m_Layer: 0
   m_Name: CheeseSlice
   m_TagString: CheeseSlice
@@ -51,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5c5184f2-c2f5-4063-b14b-3b1264fb3c1a
-  instanceId: 67458848-76b7-4554-b0b1-8425390a1ad0
+  instanceId: 1e8d1f2e-58a7-4499-974c-579a3af639ea
   version: 1
 --- !u!33 &2549166762445847562
 MeshFilter:
@@ -211,3 +212,15 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
+--- !u!114 &6333301042172222673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4155234935526280909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 807ac579987463a48a27c5eb4d22c717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
