@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5c5184f2-c2f5-4063-b14b-3b1264fb3c1a
-  instanceId: 4912cd98-ecda-46db-9c34-7024cb5660d8
+  instanceId: 48894895-4fc2-4c54-9a1d-1941555c8b8d
   version: 1
 --- !u!33 &4796893382826154658
 MeshFilter:
@@ -223,10 +223,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 522176099696603127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65c288e3bfae2024a855b1b8cc949b79, type: 3}
+  m_Script: {fileID: 11500000, guid: 95e457106a5ee9447a8d3df71fe71127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodHeights: []
   size: 0
 --- !u!114 &7545566421078173082
 MonoBehaviour:
