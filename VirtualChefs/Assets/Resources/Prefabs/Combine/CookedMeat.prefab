@@ -17,10 +17,10 @@ GameObject:
   - component: {fileID: 1701405869273455763}
   - component: {fileID: 3470604421928413204}
   - component: {fileID: 598225311281157699}
-  - component: {fileID: 5447568777316862342}
+  - component: {fileID: 8348120683818386589}
   m_Layer: 0
-  m_Name: LettuceBlock
-  m_TagString: LettuceBlock
+  m_Name: CookedMeat
+  m_TagString: CookedMeat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5c5184f2-c2f5-4063-b14b-3b1264fb3c1a
-  instanceId: 52a8320e-9e88-4fc5-aca8-d4a0dcf842c5
+  instanceId: 20db67fe-f7e6-40c6-9781-320c7b2930f9
   version: 1
 --- !u!33 &4796893382826154658
 MeshFilter:
@@ -63,7 +63,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522176099696603127}
-  m_Mesh: {fileID: 3340569556511490778, guid: 01e6e32335b88f244a146af71bb8d6ea, type: 3}
+  m_Mesh: {fileID: 2977383563096778778, guid: 36694ad9cc3abc04ab48fdb0373f2037, type: 3}
 --- !u!23 &3200254174171096400
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -84,7 +84,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2254121776283516742, guid: 01e6e32335b88f244a146af71bb8d6ea, type: 3}
+  - {fileID: -4093226344146330725, guid: 02a24f0f7eb1b624ab903663ee9a248c, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -125,8 +125,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.55, y: 0.2, z: 0.4}
-  m_Center: {x: -0.01, y: 0.1, z: -0.0625}
+  m_Size: {x: 0.22, y: 0.05, z: 0.22}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8726916404924514605
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -232,7 +232,7 @@ MonoBehaviour:
   cutProgress: 0
   cutGoal: 0
   cut: 0
---- !u!114 &5447568777316862342
+--- !u!114 &8348120683818386589
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -441,7 +441,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5662945838931686833}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.06}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.003, y: 0.003, z: 0.003}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -450,7 +450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.35}
+  m_AnchoredPosition: {x: 0, y: 0.25}
   m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &593938407854262878

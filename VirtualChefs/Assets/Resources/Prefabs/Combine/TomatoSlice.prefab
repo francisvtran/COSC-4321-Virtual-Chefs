@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 329057242730813761}
   - component: {fileID: 8584927207853302184}
   - component: {fileID: 751535095431547506}
+  - component: {fileID: 4885195668189085507}
   m_Layer: 0
   m_Name: TomatoSlice
   m_TagString: TomatoSlice
@@ -51,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5c5184f2-c2f5-4063-b14b-3b1264fb3c1a
-  instanceId: 613f4ad6-3f51-4142-b83b-6edb60bdd7e2
+  instanceId: 0d9b4f79-3e5a-476d-80df-e25a598dd23e
   version: 1
 --- !u!33 &7873840605044031863
 MeshFilter:
@@ -211,3 +212,15 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
+--- !u!114 &4885195668189085507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8195069552191914451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 807ac579987463a48a27c5eb4d22c717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
