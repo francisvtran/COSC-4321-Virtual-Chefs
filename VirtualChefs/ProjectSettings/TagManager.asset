@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ticket
+  - Food
+  - Plate
+  - BottomBun
+  - TopBun
+  - CheeseSlice
+  - LettuceSlice
+  - TomatoSlice
+  - CookedMeat
   layers:
   - Default
   - TransparentFX
