@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/Scenes/Chopping.unity
+    guid: 341769c8d504b5341a114fde9a553505
+  - enabled: 1
+    path: Assets/Scenes/ingredient.unity
+    guid: 66452a6b8682d4ae1a6aa5b53ddf3f34
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f316f6a884a9e6e4384a76c9f94e37b4,
       type: 2}

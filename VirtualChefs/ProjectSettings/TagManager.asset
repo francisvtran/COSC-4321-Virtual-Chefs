@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: [Spawnable, Ticket, Food, Plate, BottomBun, TopBun, CheeseSlice, LettuceSlice,
+  tags: [CheeseBlock, Knife, LettuceBlock, TomatoBlock, TopBun, BottomBun, UncookedMeat,
+    CookedMeat, BurntMeat, CheeseSlice, TomatoSlice, LettuceSlice, Plate, Stove, Bin,
+    food, Spawnable, Ticket, Food, Plate, BottomBun, TopBun, CheeseSlice, LettuceSlice,
     TomatoSlice, CookedMeat]
   layers:
   - Default
