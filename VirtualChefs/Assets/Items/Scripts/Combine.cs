@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using Oculus.Interaction.Grab;
 using Oculus.Interaction.HandGrab;
 using System;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+// Food struct containing information about a specific food item or plate
 public struct Food
 {
     public GameObject item;
@@ -13,25 +15,22 @@ public struct Food
     public float height;
     public int priority;
 
-    public Food(GameObject food)
+    public Food(GameObject food, float[] foodHeights)
     {
         item = food;
         tag = food.tag;
 
-        // Get height of food
-        MeshRenderer renderer = food.GetComponent<MeshRenderer>();
-        if (renderer != null)
-        {
-            height = renderer.bounds.size.y; // Get height of food
-        }
-        else
-        {
-            height = food.transform.localScale.y;
-        }
-
+        // Need to initialize all struct data members before calling getPriority(), else compiler errors emerge
         priority = -1;
+        height = -1;
+
         priority = getPriority();
+        if (priority != -1)
+        {
+            height = foodHeights[priority];
+        }
     }
+    // Returns priority of food to be used when identifying where a newly inserted food should go in the food stack (lower p => lower on plate)
     int getPriority()
     {
         int p = -1;
@@ -50,23 +49,53 @@ public struct Food
 
 public class Combine : MonoBehaviour
 {
+    private HandGrabInteractor handGrab; // Reference to the HandGrabInteractor component
+
     public List<Food> plate = new List<Food>();
-    //[SerializeField] float positionPointer;
+    public float[] foodHeights;
+    public bool[] foods;
     public int size;
 
     void Start()
     {
-        Food food = new Food(this.gameObject);
+        initializeHeights();
+        initializeFoods();
+        Food food = new Food(this.gameObject, foodHeights);
         plate.Add(food);
-        //positionPointer = this.gameObject.transform.localPosition.y;
         size = 1;
+
+    }
+
+    // Sets heights appropriate for food items (numbers gotten through manual height readings via cube object scale)
+    void initializeHeights()
+    {
+        foodHeights = new float[7];
+        foodHeights[0] = 0.0350f;    // Plate
+        foodHeights[1] = 0.0190f;    // Bottom Bun .0290f
+        foodHeights[2] = 0.0060f;    // Lettuce
+        foodHeights[3] = 0.0185f;    // Cheese
+        foodHeights[4] = 0.0270f;    // Meat
+        foodHeights[5] = 0.0090f;    // Tomato
+        foodHeights[6] = 0.0841f;    // Top Bun
+    }
+
+    // Second catch to ensure dupes truly dont exist
+    void initializeFoods()
+    {
+        foods = new bool[7];
+        foods[0] = true;    // Plate
+        foods[1] = false;    // Bottom Bun
+        foods[2] = false;    // Lettuce
+        foods[3] = false;    // Cheese
+        foods[4] = false;    // Meat
+        foods[5] = false;    // Tomato
+        foods[6] = false;    // Top Bun
     }
 
     // To check if an  item already exists in the plate so that duplicates aren't possible
     bool inPlateAlready(string foodTag)
     {
         bool found = false;
-        // Do item search here
         foreach (Food item in plate)
         {
             if (item.tag == foodTag)
@@ -78,17 +107,8 @@ public class Combine : MonoBehaviour
         return found;
     }
 
-    void sortFood()
-    {
-
-    }
-
     void placeFood(Food food, int insertIndex)
     {
-        Debug.Log("Type: " + food.tag);
-        Debug.Log("Priority: " + food.priority);
-        Debug.Log("Height: " + food.height);
-        Debug.Log("Insert Index: " + insertIndex);
         float foodPosition = 0f;
 
         // Get total height of food items that will be below new food item
@@ -98,7 +118,7 @@ public class Combine : MonoBehaviour
         }
 
         // Update heights for food items above newly placed food
-        for (int i = insertIndex; i < size; i++)
+        for (int i = insertIndex + 1; i < size; i++)
         {
             Food ingredient = plate[i];
             Vector3 newPosition = ingredient.item.transform.localPosition;
@@ -107,9 +127,9 @@ public class Combine : MonoBehaviour
             ingredient.item.transform.localPosition = newPosition;
         }
 
-        food.item.transform.SetParent(transform); // Plate becomes parent to food object [plate movements will also move all children together]
+        food.item.transform.SetParent(transform);               // Plate becomes parent to food object [so that when the plate moves, all children move together]
         food.item.GetComponent<Rigidbody>().isKinematic = true; // Prevent unwanted physics to occur on child food items
-        food.item.GetComponent<Collider>().isTrigger = true; // Prevent triggers from constantly occurring for children in the plate
+        food.item.GetComponent<Collider>().isTrigger = false;   // Prevent triggers from constantly occurring for children in the plate
 
         // Removes ability to grab food object [may want to change to be able to get food back]
         HandGrabInteractable grabInteractable = food.item.GetComponent<HandGrabInteractable>();
@@ -119,41 +139,50 @@ public class Combine : MonoBehaviour
             grabInteractable.InjectSupportedGrabTypes(GrabTypeFlags.None);
         }
 
-        food.item.transform.localPosition = new Vector3(0, foodPosition, 0); // Place food exactly where it needs to be
-        food.item.transform.localRotation = Quaternion.identity; // Reset rotation to (0, 0, 0)
+        food.item.transform.localRotation = Quaternion.identity;                                 // Reset rotation to (0, 0, 0)
+        food.item.transform.localPosition = new Vector3(0, foodPosition + (food.height / 4), 0); // Place food exactly where it needs to be
     }
+
 
     // Called when an item collides with plate
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("In trigger!");
-        Food food = new Food(other.gameObject);
-        // If food is not a combinable object or food already exists on the plate, we do not add it to the plate
+        Food food = new Food(other.gameObject, foodHeights);
         if (food.priority < 0 || inPlateAlready(food.tag))
         {
             return;
         }
 
-        // Push new food to list, and sort list based on their priority (ascending)
+        ObjectGrabCheck grabCheck = other.GetComponent<ObjectGrabCheck>();
+        if (grabCheck != null && grabCheck.IsBeingHeld())
+        {
+            StartCoroutine(WaitForReleaseAndAdd(food, other));
+            return;
+        }
+
+        // Object is not being held, but plate is
+        // Doubly ensure no duplicates exist
+        if (foods[food.priority] == true)
+        {
+            return;
+        }
+        foods[food.priority] = true;
+
+        // Find index of where food item should go based on its priority and already placed items
         bool foundIndex = false;
         int index = 0;
-        //Debug.Log("Priority of  " + food.tag + ": [" + food.priority + "]");
         while (!foundIndex)
         {
             int currentP = plate[index].priority;
-            //Debug.Log("Current " + plate[index].tag + ": [" + plate[index].priority + "]");
             if (food.priority <= currentP)
             {
                 foundIndex = true;
-                //Debug.Log("Index: " + index);
                 break;
             }
-            //Debug.Log("++++++++++++++++++++++++++++++++++++++++++");
             index++;
             if (index >= size)
             {
                 foundIndex = true;
-                //Debug.Log("Index: " + index);
             }
         }
         plate.Insert(index, food);
@@ -161,14 +190,51 @@ public class Combine : MonoBehaviour
 
         // Physically place food onto plate:
         placeFood(food, index);
+    }
 
-        // If sort did not change, we don't need to "restack" the plate [MAY NOT NEED SORT IF DOING INSERTS AS ABOVE]
-        // Else, stack the items onto the plate 
+    private IEnumerator WaitForReleaseAndAdd(Food food, Collider other)
+    {
+        ObjectGrabCheck grabCheck = other.GetComponent<ObjectGrabCheck>();
 
+        while (grabCheck.IsBeingHeld())
+        {
+            yield return null; // Wait for the next frame
+        }
 
-        if (other.gameObject.CompareTag("Knife"))
+        // Check if the object is still within the collision area of the plate
+        if (other.gameObject.GetComponent<Collider>().bounds.Intersects(GetComponent<Collider>().bounds))
         {
 
+            // Food already physically placed
+            if (foods[food.priority] == true)
+            {
+                yield break;
+            }
+            foods[food.priority] = true;
+
+            // Find index of where food item should go based on its priority and already placed items
+            bool foundIndex = false;
+            int index = 0;
+            while (!foundIndex)
+            {
+                int currentP = plate[index].priority;
+                if (food.priority <= currentP)
+                {
+                    foundIndex = true;
+                    break;
+                }
+                index++;
+                if (index >= size)
+                {
+                    foundIndex = true;
+                }
+            }
+
+            plate.Insert(index, food);
+            size++;
+
+            // Physically place food onto plate:
+            placeFood(food, index);
         }
     }
 }
