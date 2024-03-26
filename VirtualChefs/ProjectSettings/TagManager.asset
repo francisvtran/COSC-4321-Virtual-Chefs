@@ -4,7 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Spawnable
+  - Floor
+  - DirectionalApparatus
+  - Cabinet
+  - PokeInteractor
+  - Bullet
+  - SamplesInfoPanel
   layers:
   - Default
   - TransparentFX
@@ -12,15 +17,15 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - SceneUnderstanding
+  - SnapZones
+  - MiniGeneratorSnapZone
+  - TeslaCoilSnapZone
+  - TeslaCoilKeySnap
+  - WallSurface
+  - FloorSurface
+  - DeskSurface
+  - PlacementVisualisers
   - 
   - 
   - 
