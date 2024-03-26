@@ -3,10 +3,38 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: [CheeseBlock, Knife, LettuceBlock, TomatoBlock, TopBun, BottomBun, UncookedMeat,
-    CookedMeat, BurntMeat, CheeseSlice, TomatoSlice, LettuceSlice, Plate, Stove, Bin,
-    food, Spawnable, Ticket, Food, Plate, BottomBun, TopBun, CheeseSlice, LettuceSlice,
-    TomatoSlice, CookedMeat]
+  tags:
+  - Floor
+  - DirectionalApparatus
+  - Cabinet
+  - PokeInteractor
+  - Bullet
+  - SamplesInfoPanel
+  - CheeseBlock
+  - Knife
+  - LettuceBlock
+  - TomatoBlock
+  - TopBun
+  - BottomBun
+  - UncookedMeat
+  - CookedMeat
+  - BurntMeat
+  - CheeseSlice
+  - TomatoSlice
+  - LettuceSlice
+  - Plate
+  - Stove
+  - Bin
+  - food
+  - Ticket
+  - Food
+  - Plate
+  - BottomBun
+  - TopBun
+  - CheeseSlice
+  - LettuceSlice
+  - TomatoSlice
+  - CookedMeat
   layers:
   - Default
   - TransparentFX
@@ -14,15 +42,15 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - SceneUnderstanding
+  - SnapZones
+  - MiniGeneratorSnapZone
+  - TeslaCoilSnapZone
+  - TeslaCoilKeySnap
+  - WallSurface
+  - FloorSurface
+  - DeskSurface
+  - PlacementVisualisers
   - 
   - 
   - 
