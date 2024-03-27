@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Chopping.unity
     guid: 341769c8d504b5341a114fde9a553505
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ingredient.unity
     guid: 66452a6b8682d4ae1a6aa5b53ddf3f34
   - enabled: 1
