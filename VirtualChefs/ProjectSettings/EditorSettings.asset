@@ -5,7 +5,7 @@ EditorSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
   m_SerializationMode: 2
-  m_LineEndingsForNewScripts: 2
+  m_LineEndingsForNewScripts: 0
   m_DefaultBehaviorMode: 0
   m_PrefabRegularEnvironment: {fileID: 0}
   m_PrefabUIEnvironment: {fileID: 0}
@@ -31,7 +31,6 @@ EditorSettings:
   m_AssetNamingUsesSpace: 1
   m_InspectorUseIMGUIDefaultInspector: 0
   m_UseLegacyProbeSampleCount: 0
-  m_SerializeInlineMappingsOnOneLine: 0
   m_DisableCookiesInLightmapper: 1
   m_AssetPipelineMode: 1
   m_RefreshImportMode: 0
