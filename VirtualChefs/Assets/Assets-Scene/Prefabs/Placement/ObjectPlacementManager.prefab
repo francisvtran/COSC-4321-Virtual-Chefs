@@ -3291,7 +3291,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_spawnUi: {fileID: 7438812316205705168}
   m_againstWallObject: []
-  m_onWallObject: []
+  m_onWallObject:
+  - ObjectName: Fridge
+    DisplayPrefab: {fileID: 6550051017233870249, guid: 4647989cc85b6334297fb250c052a842, type: 3}
+    MainPosition: {x: 0, y: 0, z: 0}
+    WallPosition: {x: 0, y: 0, z: 0}
+    WallRotation: {x: 0, y: 0, z: 0, w: 0}
+    SuccessfullyPlaced: 0
+    MainRotation: {x: 0, y: 0, z: 0, w: 0}
+    SpawnedDisplayObject: {fileID: 0}
   m_deskObject:
   - ObjectName: EggTable
     DisplayPrefab: {fileID: 3967299115179155971, guid: a5f9306d0c32aee4fb2a8b9e13578bc2, type: 3}
@@ -3317,15 +3325,7 @@ MonoBehaviour:
     SuccessfullyPlaced: 0
     MainRotation: {x: 0, y: 0, z: 0, w: 0}
     SpawnedDisplayObject: {fileID: 0}
-  m_floorObject:
-  - ObjectName: AtlasStatue
-    DisplayPrefab: {fileID: 896352582034296102, guid: 5e471f67c0e140e4db7fd077f8a7ac78, type: 3}
-    MainPosition: {x: 0, y: 0, z: 0}
-    WallPosition: {x: 0, y: 0, z: 0}
-    WallRotation: {x: 0, y: 0, z: 0, w: 0}
-    SuccessfullyPlaced: 0
-    MainRotation: {x: 0, y: 0, z: 0, w: 0}
-    SpawnedDisplayObject: {fileID: 0}
+  m_floorObject: []
   m_anyHorizontalObject: []
 --- !u!114 &3356639559488727692
 MonoBehaviour:

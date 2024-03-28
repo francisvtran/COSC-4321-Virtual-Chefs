@@ -55,7 +55,16 @@ namespace CrypticCabinet.Utils
             GENERATOR_SCHEMATIC2,
             TABLE,
             TABLE_1,
-            TABLE_2
+            TABLE_2,
+            FRIDGE,
+            TICKET_WHEEL,
+            COUNTER,
+            KNIFE,
+            CUTTING_COUNTER,
+            TURN_IN_ZONE,
+            STOVE,
+            BURGER,
+            PLATE_SPAWN_STATION
         }
 
         [Serializable]
