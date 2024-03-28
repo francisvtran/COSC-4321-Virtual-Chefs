@@ -5,7 +5,7 @@ using TMPro;
 
 public class Cookable : MonoBehaviour
 {
-    [SerializeField] CountDisplay countDisplay;
+   
     [SerializeField] ProgressBar progressBar;
 
     GameObject cookedPrefab;
@@ -17,12 +17,7 @@ public class Cookable : MonoBehaviour
 
     private string cookedPrefabDirectory;
 
-    void CopyFromDisplay(CountDisplay original)
-    {
-        this.countDisplay.holder = original.holder;
-        this.countDisplay.cutsRemaining = original.cutsRemaining;
-        this.countDisplay.messageString = original.messageString;
-    }
+
 
     void CopyFromProgressBar(ProgressBar original)
     {
@@ -83,7 +78,7 @@ public class Cookable : MonoBehaviour
 
         setCountText();
         UpdateProgressBar();
-        countDisplay.ShowMessage(cookText.text);
+ 
 
         // Load the prefab of cooked version of food from the Resources folder
         cookedPrefab = Resources.Load<GameObject>(cookedPrefabDirectory);
@@ -135,7 +130,7 @@ public class Cookable : MonoBehaviour
         // Access the Cookable component attached to the cookedObject and set initial properties
         Cookable cookedCookable = cookedObject.GetComponent<Cookable>();
         cookedCookable.InitializeCookable();
-        cookedCookable.CopyFromDisplay(tempDisplay);
+  
         cookedCookable.CopyFromProgressBar(tempProgressBar);
     }
 

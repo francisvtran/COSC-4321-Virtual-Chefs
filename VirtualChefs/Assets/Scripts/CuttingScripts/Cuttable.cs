@@ -5,7 +5,7 @@ using TMPro;
 
 public class Cuttable : MonoBehaviour
 {
-    [SerializeField] CountDisplay countDisplay;
+   
     [SerializeField] ProgressBar progressBar;
 
     GameObject slicedPrefab;
@@ -42,7 +42,7 @@ public class Cuttable : MonoBehaviour
 
         setCountText();
         UpdateProgressBar();
-        countDisplay.ShowMessage(cutText.text);
+       
 
         // Load the prefab of cut version of food from the Resources folder
         slicedPrefab = Resources.Load<GameObject>("Prefabs/Combine/" + foodType);
