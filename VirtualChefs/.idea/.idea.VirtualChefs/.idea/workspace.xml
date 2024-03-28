@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cf565a9-781f-4892-b429-4dfc108581e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Assets-Scene/GamePhases/PuzzleLoadingGamePhase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets-Scene/GamePhases/PuzzleLoadingGamePhase.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets-Scene/Prefabs/Placement/ObjectPlacementManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets-Scene/Prefabs/Placement/ObjectPlacementManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VirtualChefs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VirtualChefs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Prefabs/TicketWheelModel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Prefabs/TicketWheelModel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Prefabs/TicketWheelPrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Prefabs/TicketWheelPrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Combine/BottomBun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Combine/BottomBun.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Combine/TopBun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Combine/TopBun.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Cook/CookedMeat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Cook/CookedMeat.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Cook/UncookedMeat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Cook/UncookedMeat.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Cut/CheeseBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Cut/CheeseBlock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Cut/LettuceBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Cut/LettuceBlock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Cut/TomatoBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Cut/TomatoBlock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/ingredient/StoveCounter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/ingredient/StoveCounter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tickets.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tickets.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ingredient.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ingredient.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CuttingScripts/Cookable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CuttingScripts/Cookable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
