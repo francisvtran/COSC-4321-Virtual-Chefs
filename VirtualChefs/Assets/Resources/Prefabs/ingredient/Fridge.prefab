@@ -52,7 +52,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.839, y: 0.625, z: -0.7380454}
+  m_ConnectedAnchor: {x: -0.29, y: 0.625, z: -0.7380454}
   serializedVersion: 2
   m_UseSpring: 1
   m_Spring:
@@ -860,7 +860,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.009, y: 0.58, z: -0.907}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2423593810145972292}
   - {fileID: 1592665139934434595}
@@ -1066,7 +1066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_objectType: 24
-  m_isWallObject: 1
+  m_isWallObject: 0
   m_placeAtGroundLevel: 0
   m_onObjectPlaced:
     m_PersistentCalls:

@@ -1409,7 +1409,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 2305
+  Flags: 67841
   NetworkGuid:
     RawGuidValue: c48b306f21bd6d24b86fc2885eeecfac
   NestedObjects: []

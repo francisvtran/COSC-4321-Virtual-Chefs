@@ -20,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tickets.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tickets.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ingredient.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ingredient.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CuttingScripts/Cookable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CuttingScripts/Cookable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CuttingScripts/Cuttable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CuttingScripts/Cuttable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>

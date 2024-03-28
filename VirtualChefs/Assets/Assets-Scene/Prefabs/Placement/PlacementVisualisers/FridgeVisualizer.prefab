@@ -105,7 +105,7 @@ MonoBehaviour:
   m_layerMaskFloor:
     serializedVersion: 2
     m_Bits: 12288
-  m_placementType: 0
+  m_placementType: 2
   m_useMaxWallHeight: 0
   m_maxWallHeight: 1
 --- !u!114 &5859617294599979065
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_layerMaskFloor:
     serializedVersion: 2
     m_Bits: 12288
-  m_placementType: 0
+  m_placementType: 2
   m_useMaxWallHeight: 0
   m_maxWallHeight: 1
 --- !u!1 &2449296809065134350
@@ -246,8 +246,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.006, y: 0, z: -0.941}
-  m_LocalScale: {x: 1, y: 1.5, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 2.25, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4459007216261911298}
   - {fileID: 3124413727477453801}
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_userInteractableObject: 1
-  m_radius: 0.5
+  m_radius: 2
   m_placeAgainstWall: 0
   m_onTheWall: 0
   m_flipFaceDirection: 0
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_layerMaskFloor:
     serializedVersion: 2
     m_Bits: 12288
-  m_placementType: 0
+  m_placementType: 2
   m_useMaxWallHeight: 0
   m_maxWallHeight: 1
 --- !u!114 &4909618250596849100
